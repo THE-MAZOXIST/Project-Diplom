@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">BSAC STUDY</string>
+    <string name="todo">TODO</string>
+    <string name="boy">boy</string>
+    <string name="start">Начать</string>
+    <string name="back">назад</string>
+    <string name="level">уровень:</string>
+    <string name="level1">уровень 1</string>
+    <string name="textcontinue">продолжить</string>
+    <string name="lekcii">Лекции</string>
+    <string name="labs">Лабораторные</string>
+    <string name="lab1but">Лабараторная 1</string>
+    <string name="lab2but">Лабараторная 2</string>
+    <string name="lab3but">Лабараторная 3</string>
+    <string name="lab4but">Лабараторная 4</string>
+    <string name="lab5but">Лабараторная 5</string>
+    <string name="lab6but">Лабараторная 6</string>
+    <string name="lab7but">Лабараторная 7</string>
+    <string name="lab8but">Лабараторная 8</string>
+    <string name="lab9but">Лабараторная 9</string>
+    <string name="lab10but">Лабараторная 10</string>
+    <string name="lab11but">Лабараторная 11</string>
+    <string name="lab12but">Лабараторная 12</string>
+    <string name="password_but">Вход</string>
+
+</resources>
