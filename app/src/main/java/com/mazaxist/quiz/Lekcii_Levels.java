@@ -16,7 +16,7 @@ public class Lekcii_Levels extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lekcii_main);
+        setContentView(R.layout.lectures_main);
 
 
 

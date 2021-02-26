@@ -17,7 +17,7 @@ public class Level1_1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.level1_1);
+        setContentView(R.layout.lectures1);
 
         //создаем переменную text_levels
         TextView text_levels = findViewById(R.id.text_levels);
