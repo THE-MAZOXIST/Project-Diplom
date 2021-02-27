@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="column1_line1">
+        наименование
+    </string>
+    <string name="column2_line1">
+        обозначение
+    </string>
+    <string name="column3_line1">
+        пояснение
+    </string>
+    <string name="column1_line2">
+        Пуск-остановка
+    </string>
+    <string name="column2_line2">
+        картинка
+    </string>
+    <string name="column3_line2">
+        Начало, конец алгоритма, остановка,
+        вход, выход в подпрограмму
+    </string>
+    <string name="column1_line3">
+        Процесс
+    </string>
+    <string name="column2_line3">
+        картинка
+    </string>
+    <string name="column3_line3">
+        Вычислительная лперация или группа операций
+    </string>
+    <string name="column1_line4">
+        Решение
+    </string>
+    <string name="column2_line4">
+        Картинка
+    </string>
+    <string name="column3_line4">
+        Разветвление в алгоритме, проверка условий
+    </string>
+    <string name="column1_line5">
+        Модфикация
+    </string>
+    <string name="column2_line5">
+        картинка
+    </string>
+    <string name="column3_line5">
+        Начало цикла
+    </string>
+    <string name="column1_line6">
+        Предопреденный процесс
+    </string>
+    <string name="column2_line6">
+        картинка
+    </string>
+    <string name="column3_line6">
+        Программа, стандартная подпрограмма
+    </string>
+    <string name="column1_line7">
+        Ввод-вывод
+    </string>
+    <string name="column2_line7">
+        картинка
+    </string>
+    <string name="column3_line7">
+        Ввод-вывод в общем виде
+    </string>
+    <string name="column1_line8">
+        Документ
+    </string>
+    <string name="column2_line8">
+        картинка
+    </string>
+    <string name="column3_line8">
+        Вывод результатов на бумагу
+    </string>
+    <string name="column1_line9">
+        Дисплей
+    </string>
+    <string name="column2_line9">
+        картинка
+    </string>
+    <string name="column3_line9">
+        Ввод-вывод данных на дисплей
+    </string>
+    <string name="column1_line10">
+        Линии потока
+    </string>
+    <string name="column2_line10">
+        картинка
+    </string>
+    <string name="column3_line10">
+        Соединительны линии между блоками алгоритмов
+    </string>
+    <string name="column1_line11">
+        Соединители
+    </string>
+    <string name="column2_line11">
+        картинка
+    </string>
+    <string name="column3_line11">
+        Разрыв линий потока на странице, на разных страницах
+    </string>
+</resources>

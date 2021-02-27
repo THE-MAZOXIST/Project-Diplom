@@ -65,7 +65,7 @@
 
 
                             <TextView
-                                android:id="@+id/text_on_level1"
+                                android:id="@+id/text_on_level"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginLeft="10dp"
@@ -76,92 +76,473 @@
 
                             <TableLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
+                                android:layout_height="750dp">
 
                                 <TableRow
                                     android:id="@+id/lab1_tab1_line1"
                                     android:layout_width="fill_parent"
                                     android:layout_height="wrap_content"
-                                    android:background="@drawable/border"
-                                    android:layout_marginStart="20dp"
-                                    android:layout_marginEnd="30dp">
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border">
 
                                     <TextView
-                                        android:layout_height="wrap_content"
                                         android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
                                         android:layout_weight="0.5"
-                                        android:textColor="#fff"
-                                        android:textStyle="bold"
-                                        android:gravity="center_horizontal"
-                                        android:text="Ячейка"
                                         android:background="@drawable/border"
-                                        />
-
-                                    <TextView
-                                        android:layout_height="wrap_content"
-                                        android:layout_width="0dp"
-                                        android:layout_weight="0.5"
+                                        android:gravity="center_horizontal"
+                                        android:padding="5dp"
+                                        android:text="@string/column1_line1"
                                         android:textColor="#000"
-                                        android:textStyle="bold"
-                                        android:gravity="center_horizontal"
-                                        android:background="@drawable/border"
-                                        android:text="Ячейка"
-                                        />
+                                        android:textStyle="bold" />
 
                                     <TextView
-                                        android:layout_height="wrap_content"
                                         android:layout_width="0dp"
+                                        android:layout_height="match_parent"
                                         android:layout_weight="0.5"
-                                        android:textColor="#000"
-                                        android:textStyle="bold"
-                                        android:gravity="center_horizontal"
                                         android:background="@drawable/border"
-                                        android:text="Ячейка"
-                                        />
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column2_line1"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column3_line1"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
 
                                 </TableRow>
 
                                 <TableRow
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:background="@drawable/border"
-                                    android:layout_marginStart="20dp"
-                                    android:layout_marginEnd="30dp">
-                                    <TextView
-                                    android:id="@+id/lab1_tab1_iach4"
-                                    android:layout_gravity="center"
-                                    android:text="Наименов"
-                                    />
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border">
 
                                     <TextView
-                                        android:background="#0000ff"
-                                        android:layout_margin="2dip"
-                                    />
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column1_line2"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
 
                                     <TextView
-                                        android:id="@+id/amount"
-                                        android:background="#0000ff"
-                                        android:layout_margin="2dip"
-                                    />
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column2_line2"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column3_line2"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
                                 </TableRow>
 
                                 <TableRow
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column1_line3"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column2_line3"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center_horizontal"
+                                        android:padding="5dp"
+                                        android:text="@string/column3_line3"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+                                </TableRow>
 
                                 <TableRow
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent" />
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column1_line4"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column2_line4"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center_horizontal"
+                                        android:padding="5dp"
+                                        android:text="@string/column3_line4"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column1_line5"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column2_line5"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center_horizontal"
+                                        android:padding="5dp"
+                                        android:text="@string/column3_line5"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column1_line6"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column2_line6"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center_horizontal"
+                                        android:padding="5dp"
+                                        android:text="@string/column3_line6"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column1_line7"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column2_line7"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center_horizontal"
+                                        android:padding="5dp"
+                                        android:text="@string/column3_line7"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column1_line8"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column2_line8"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center_horizontal"
+                                        android:padding="5dp"
+                                        android:text="@string/column3_line8"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column1_line9"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column2_line9"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center_horizontal"
+                                        android:padding="5dp"
+                                        android:text="@string/column3_line9"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column1_line10"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column2_line10"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center_horizontal"
+                                        android:padding="5dp"
+                                        android:text="@string/column3_line10"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column1_line11"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="@string/column2_line11"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:background="@drawable/border"
+                                        android:gravity="center_horizontal"
+                                        android:padding="5dp"
+                                        android:text="@string/column3_line11"
+                                        android:textColor="#000"
+                                        android:textStyle="bold" />
+                                </TableRow>
 
                             </TableLayout>
 
-                            <ImageView
-                                android:id="@+id/tabl1_lab1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginEnd="5dp"
-                                app:srcCompat="@drawable/tabl11"
-                                android:contentDescription="TODO" />
+                            <TextView
+                                android:id="@+id/text_on_level1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/lab1_1text" />
+
                         </LinearLayout>
                     </ScrollView>
 
