@@ -13,7 +13,7 @@
         Пуск-остановка
     </string>
     <string name="column2_line2">
-        картинка
+        <img></img>
     </string>
     <string name="column3_line2">
         Начало, конец алгоритма, остановка,

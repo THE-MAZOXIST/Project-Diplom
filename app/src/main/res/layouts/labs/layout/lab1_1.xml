@@ -65,14 +65,25 @@
 
 
                             <TextView
-                                android:id="@+id/text_on_level"
+                                android:id="@+id/text_on_lab1_1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginRight="10dp"
                                 android:paddingLeft="10dp"
                                 android:paddingRight="10dp"
-                                android:text="@string/lab1_1text" />
+                                <!-- android:text="@string/lab1_1text" /> -->
+
+                            <TextView
+                                android:id="@+id/text_on_lab1_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:gravity="end"
+                                android:text="@string/lab1_tabl1_name" />
 
                             <TableLayout
                                 android:layout_width="match_parent"
@@ -139,7 +150,7 @@
                                         android:textColor="#000"
                                         android:textStyle="bold" />
 
-                                    <TextView
+                                    <ImageView
                                         android:layout_width="0dp"
                                         android:layout_height="match_parent"
                                         android:layout_weight="0.5"
@@ -147,6 +158,7 @@
                                         android:gravity="center"
                                         android:padding="5dp"
                                         android:text="@string/column2_line2"
+                                        android:src="@drawable/kartinka1"
                                         android:textColor="#000"
                                         android:textStyle="bold" />
 
@@ -534,14 +546,30 @@
                             </TableLayout>
 
                             <TextView
-                                android:id="@+id/text_on_level1"
+                                android:id="@+id/text_on_lab1_3"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginRight="10dp"
                                 android:paddingLeft="10dp"
                                 android:paddingRight="10dp"
-                                android:text="@string/lab1_1text" />
+                                android:text="@string/lab1_2text" />
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/bsac_ikon_svg" />
+
+                            <TextView
+                                android:id="@+id/text_on_lab1_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/lab1_2text" />
 
                         </LinearLayout>
                     </ScrollView>
