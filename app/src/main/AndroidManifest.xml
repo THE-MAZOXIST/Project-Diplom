@@ -25,6 +25,15 @@
         </activity>
 
         <activity
+            android:name=".Lectures1"
+            android:screenOrientation="portrait">
+            <intent-filter>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -34,7 +43,7 @@
         </activity>
 
         <activity
-            android:name=".Lekcii_Levels"
+            android:name=".Lectures_main"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -50,7 +59,7 @@
         </activity>
 
         <activity
-            android:name=".lekcii1"
+            android:name=".Lekcii1"
             android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />

@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 //Direct by Birulia Maksim, supervisor - Gorbadei Olga [BSAC]
-public class Lekcii_Levels extends AppCompatActivity {
+public class Lectures_main extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class Lekcii_Levels extends AppCompatActivity {
                 // команда для кноки
                 //начало конструкции
                 try{
-                    Intent intent = new Intent(Lekcii_Levels.this, MainActivity.class);
+                    Intent intent = new Intent(Lectures_main.this, MainActivity.class);
                     startActivity(intent);finish();
                 }catch (Exception e){
 
@@ -46,7 +46,7 @@ public class Lekcii_Levels extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    Intent intent = new Intent(Lekcii_Levels.this, lekcii1.class);
+                    Intent intent = new Intent(Lectures_main.this, Lekcii1.class);
                     startActivity(intent);finish();
                 }catch (Exception e){
 
@@ -55,13 +55,28 @@ public class Lekcii_Levels extends AppCompatActivity {
         });
         //кнопка для перехода на первый уровень - конец
 
+        //кнопка для перехода на второй уровень - начало
+        TextView lekcii2 = (TextView)findViewById(R.id.lekcii2);
+        lekcii2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Intent intent = new Intent(Lectures_main.this, Lectures1.class);
+                    startActivity(intent);finish();
+                }catch (Exception e){
+
+                }
+            }
+        });
+        //кнопка для перехода на второй уровень - конец
+
 
     }
     //системная кнопка "назад" - начало
     @Override
     public void onBackPressed(){
         try{
-            Intent intent = new Intent(Lekcii_Levels.this, MainActivity.class);
+            Intent intent = new Intent(Lectures_main.this, MainActivity.class);
             startActivity(intent);finish();
         }catch (Exception e){
 

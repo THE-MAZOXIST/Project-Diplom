@@ -37,7 +37,7 @@ public class Level1_1 extends AppCompatActivity {
             public void onClick(View view) {
                 //обработка нажатия кнопки "назад" - начало
                 try{
-                    Intent intent = new Intent(Level1_1.this, lekcii1.class); //создали намерения для перехода к выбору уровня
+                    Intent intent = new Intent(Level1_1.this, Lekcii1.class); //создали намерения для перехода к выбору уровня
                     startActivity(intent);                          //старт намерений
                     finish();                                      //закрыть этот класс
                     //вернуться назад к выбору уровя
@@ -73,7 +73,7 @@ public class Level1_1 extends AppCompatActivity {
     public void onBackPressed(){
         //обработка нажатия кнопки "назад" - начало
         try{
-            Intent intent = new Intent(Level1_1.this, Lekcii_Levels.class); //создали намерения для перехода к выбору уровня
+            Intent intent = new Intent(Level1_1.this, Lectures_main.class); //создали намерения для перехода к выбору уровня
             startActivity(intent);//старт намерений
             finish();//закрыть этот класс
             //вернуться назад к выбору уровя

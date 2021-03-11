@@ -16,7 +16,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 //Direct by Birulia Maksim, supervisor - Gorbadei Olga [BSAC]
-public class lekcii1 extends AppCompatActivity {
+public class Lekcii1 extends AppCompatActivity {
 
     Dialog dialog;
 
@@ -54,7 +54,7 @@ public class lekcii1 extends AppCompatActivity {
                 //обрабатываем нажатие кнопки - начало
                 try{
                     //вернуться назад к выбору уровня - начало
-                    Intent intent = new Intent(lekcii1.this, Lekcii_Levels.class); //создали намерения для перехода
+                    Intent intent = new Intent(Lekcii1.this, Lectures_main.class); //создали намерения для перехода
                     startActivity(intent); //старт намерения
                     finish();//закрыть этот класс
                     //вернуться назад к выбору уровня - конец
@@ -82,7 +82,7 @@ public class lekcii1 extends AppCompatActivity {
 
 
                     try{
-                        Intent intent = new Intent(lekcii1.this, Level1_2.class);
+                        Intent intent = new Intent(Lekcii1.this, Level1_2.class);
                         startActivity(intent);finish();
                     }catch (Exception e){
 
@@ -108,7 +108,7 @@ public class lekcii1 extends AppCompatActivity {
             public void onClick(View view) {
                                                                 //обработка нажатия кнопки "назад" - начало
                 try{
-                    Intent intent = new Intent(lekcii1.this, Lekcii_Levels.class); //создали намерения для перехода к выбору уровня
+                    Intent intent = new Intent(Lekcii1.this, Lectures_main.class); //создали намерения для перехода к выбору уровня
                     startActivity(intent);                          //старт намерений
                     finish();                                      //закрыть этот класс
                                                                   //вернуться назад к выбору уровя
@@ -133,7 +133,7 @@ public class lekcii1 extends AppCompatActivity {
     public void onBackPressed(){
         //обработка нажатия кнопки "назад" - начало
         try{
-            Intent intent = new Intent(lekcii1.this, Lekcii_Levels.class); //создали намерения для перехода к выбору уровня
+            Intent intent = new Intent(Lekcii1.this, Lectures_main.class); //создали намерения для перехода к выбору уровня
             startActivity(intent);//старт намерений
             finish();//закрыть этот класс
             //вернуться назад к выбору уровя

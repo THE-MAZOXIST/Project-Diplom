@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
            public void onClick(View v){
 
                try{//переход к выбору уровня - начало
-                    Intent intent = new Intent(MainActivity.this, Lekcii_Levels.class);//создали намерения для перехода
+                    Intent intent = new Intent(MainActivity.this, Lectures_main.class);//создали намерения для перехода
                     startActivity(intent);finish();//старт намерения
                }catch (Exception e){
 

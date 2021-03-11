@@ -69,7 +69,7 @@ public class Level1_4 extends AppCompatActivity {
                 if (editText.getText().toString().equals("private"))
                 {
                 try{
-                    Intent intent = new Intent(Level1_4.this, Lekcii_Levels.class);
+                    Intent intent = new Intent(Level1_4.this, Lectures_main.class);
                     startActivity(intent);finish();
                 }catch (Exception e){
 
@@ -104,7 +104,7 @@ public class Level1_4 extends AppCompatActivity {
     public void onBackPressed(){
         //обработка нажатия кнопки "назад" - начало
         try{
-            Intent intent = new Intent(Level1_4.this, Lekcii_Levels.class); //создали намерения для перехода к выбору уровня
+            Intent intent = new Intent(Level1_4.this, Lectures_main.class); //создали намерения для перехода к выбору уровня
             startActivity(intent);//старт намерений
             finish();//закрыть этот класс
             //вернуться назад к выбору уровя
