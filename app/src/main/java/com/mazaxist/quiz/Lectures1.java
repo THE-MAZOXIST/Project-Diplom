@@ -16,7 +16,7 @@ public class Lectures1 extends AppCompatActivity {
         PDFView pdfView=findViewById(R.id.pdfView);
         //pdfView.fromAsset("lectures.pdf")
           //          .load();
-        pdfView.fromAsset("lectures.pdf")
+        pdfView.fromAsset("lectures1.pdf")
                 .pages(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10) // all pages are displayed by default
                 .enableSwipe(true) // allows to block changing pages using swipe
                 .swipeHorizontal(false)
