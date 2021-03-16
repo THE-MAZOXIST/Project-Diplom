@@ -153,15 +153,19 @@
                         android:scaleType="centerCrop"
                         app:srcCompat="@drawable/img_test" />
 
-                    <TextView
-                        android:id="@+id/text_on_level1"
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:tools="http://schemas.android.com/tools"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="30dp"
-                        android:text="@string/level1_text"
-                        android:textSize="15dp" />
+                        tools:context=".MainActivity">
+
+                        <com.github.barteksc.pdfviewer.PDFView
+                            android:id="@+id/pdfView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+
+                    </LinearLayout>
                 </FrameLayout>
 
             </LinearLayout>
