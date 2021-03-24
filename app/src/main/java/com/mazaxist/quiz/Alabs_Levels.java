@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 //Direct by Birulia Maksim, supervisor - Gorbadei Olga [BSAC]
-public class Labs_Levels extends AppCompatActivity {
+public class Alabs_Levels extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class Labs_Levels extends AppCompatActivity {
                 // команда для кноки
                 //начало конструкции
                 try{
-                    Intent intent = new Intent(Labs_Levels.this, MainActivity.class);
+                    Intent intent = new Intent(Alabs_Levels.this, MainActivity.class);
                     startActivity(intent);finish();
                 }catch (Exception e){
 
@@ -46,7 +46,7 @@ public class Labs_Levels extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try {
-                    Intent intent = new Intent(Labs_Levels.this, Lab1_1.class);
+                    Intent intent = new Intent(Alabs_Levels.this, Alab1_1.class);
                     startActivity(intent);finish();
                 }catch (Exception e){
 
@@ -61,7 +61,7 @@ public class Labs_Levels extends AppCompatActivity {
     @Override
     public void onBackPressed(){
         try{
-            Intent intent = new Intent(Labs_Levels.this, MainActivity.class);
+            Intent intent = new Intent(Alabs_Levels.this, MainActivity.class);
             startActivity(intent);finish();
         }catch (Exception e){
 

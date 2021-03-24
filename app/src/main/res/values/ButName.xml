@@ -21,6 +21,19 @@
     <string name="lab10but">Лабараторная 10</string>
     <string name="lab11but">Лабараторная 11</string>
     <string name="lab12but">Лабараторная 12</string>
+
+    <string name="electures1">Типы алгоритмов</string>
+    <string name="electures2">Структура программы</string>
+    <string name="electures3">Базовые операции</string>
+    <string name="electures4">Функции ввода-вывода</string>
+    <string name="electures5">Классификация операторов</string>
+    <string name="electures6">Операторы цикла</string>
+    <string name="electures7">Структурированные типы данных</string>
+    <string name="electures8">Указатели</string>
+    <string name="electures9">Функции пользователя</string>
+    <string name="electures10">Структуры, объединения, перечисления</string>
+    <string name="electures11">Файлы</string>
+
     <string name="password_but">Вход</string>
 
 </resources>

@@ -1,6 +1,7 @@
 package com.mazaxist.quiz;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -12,20 +13,19 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 //Direct by Birulia Maksim, supervisor - Gorbadei Olga [BSAC]
-public class Level1_1 extends AppCompatActivity {
+public class Alab1_1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lectures1);
+        setContentView(R.layout.lab1_1);
 
-        //создаем переменную text_levels
-        TextView text_levels = findViewById(R.id.text_levels);
-        text_levels.setText(R.string.level1);                                   //установили текст
 
         final ImageView img_left = (ImageView)findViewById(R.id.img_left);
         //код который скругляет углы в левой картинке
-        img_left.setClipToOutline(true);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            img_left.setClipToOutline(true);
+        }
 
 
         Window w = getWindow();
@@ -37,7 +37,7 @@ public class Level1_1 extends AppCompatActivity {
             public void onClick(View view) {
                 //обработка нажатия кнопки "назад" - начало
                 try{
-                    Intent intent = new Intent(Level1_1.this, Lekcii1.class); //создали намерения для перехода к выбору уровня
+                    Intent intent = new Intent(Alab1_1.this, Alabs_Levels.class); //создали намерения для перехода к выбору уровня
                     startActivity(intent);                          //старт намерений
                     finish();                                      //закрыть этот класс
                     //вернуться назад к выбору уровя
@@ -48,7 +48,7 @@ public class Level1_1 extends AppCompatActivity {
             }
         });
 
-        TextView text_on_level1 = (TextView)findViewById(R.id.text_on_level1);
+        TextView text_on_level1 = (TextView)findViewById(R.id.textView);
 
         //кнопко продолжить - начало
         Button btncontinuelevel1 = (Button)findViewById(R.id.btncontinuelevel1);
@@ -57,7 +57,7 @@ public class Level1_1 extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 try{
-                    Intent intent = new Intent(Level1_1.this, Level1_2.class);
+                    Intent intent = new Intent(Alab1_1.this, Alabs_Levels.class);
                     startActivity(intent);finish();
                 }catch (Exception e){
 
@@ -73,10 +73,10 @@ public class Level1_1 extends AppCompatActivity {
     public void onBackPressed(){
         //обработка нажатия кнопки "назад" - начало
         try{
-            Intent intent = new Intent(Level1_1.this, Lectures_main.class); //создали намерения для перехода к выбору уровня
+            Intent intent = new Intent(Alab1_1.this, Electures_main.class); //создали намерения для перехода к выбору уровня
             startActivity(intent);//старт намерений
             finish();//закрыть этот класс
-            //вернуться назад к выбору уровя
+            //вернуться назад к выбору уровня
         }catch (Exception e){
             //здесь кода не будет
         }
