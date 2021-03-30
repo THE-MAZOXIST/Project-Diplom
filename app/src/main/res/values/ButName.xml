@@ -7,7 +7,10 @@
     <string name="level">уровень:</string>
     <string name="level1">уровень 1</string>
     <string name="textcontinue">продолжить</string>
-    <string name="lekcii">Лекции</string>
+
+    <string name="lectures">Лекции</string>
+    <string name="testing">тестировани</string>
+
     <string name="labs">Лабораторные</string>
     <string name="lab1but">Лабараторная 1</string>
     <string name="lab2but">Лабараторная 2</string>

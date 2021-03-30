@@ -17,39 +17,59 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="107dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="140dp"
-        android:orientation="horizontal">
+        android:layout_marginBottom="145dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/lekcii"
+                android:layout_width="223dp"
+                android:layout_height="103dp"
+                android:layout_marginEnd="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_stroke_white_press_black"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/lectures"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/labs"
+                android:layout_width="223dp"
+                android:layout_height="103dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_stroke_white_press_black"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/labs"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </LinearLayout>
 
         <Button
-            android:id="@+id/lekcii"
-            android:layout_width="223dp"
-            android:layout_height="103dp"
+            android:id="@+id/lekcii3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginEnd="2dp"
-            android:layout_marginBottom="183dp"
             android:layout_weight="1"
             android:background="@drawable/button_stroke_white_press_black"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
-            android:text="@string/lekcii"
+            android:text="@string/testing"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="24sp" />
 
-        <Button
-            android:id="@+id/labs"
-            android:layout_width="223dp"
-            android:layout_height="103dp"
-            android:layout_marginBottom="186dp"
-            android:layout_weight="1"
-            android:background="@drawable/button_stroke_white_press_black"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:text="@string/labs"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
     </LinearLayout>
 
 </RelativeLayout>
