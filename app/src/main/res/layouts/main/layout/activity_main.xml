@@ -27,48 +27,92 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/lekcii"
-                android:layout_width="223dp"
-                android:layout_height="103dp"
-                android:layout_marginEnd="2dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_stroke_white_press_black"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:text="@string/lectures"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33">
 
-            <Button
-                android:id="@+id/labs"
-                android:layout_width="223dp"
-                android:layout_height="103dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_stroke_white_press_black"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:text="@string/labs"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="24sp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_lectures"
+                    android:layout_margin="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/lekcii"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_stroke_white_press_black"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_labs2"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <Button
+                    android:id="@+id/labs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_stroke_white_press_black"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_test"
+                    android:layout_margin="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/lekcii3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_stroke_white_press_black"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+
+
+            </FrameLayout>
+
 
         </LinearLayout>
-
-        <Button
-            android:id="@+id/lekcii3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="2dp"
-            android:layout_weight="1"
-            android:background="@drawable/button_stroke_white_press_black"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:text="@string/testing"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
 
     </LinearLayout>
 

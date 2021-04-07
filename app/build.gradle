@@ -22,7 +22,8 @@ android {
             res.srcDirs = ['src/main/res',
                            'src/main/res/layouts/labs',
                            'src/main/res/layouts/lectures',
-                            'src/main/res/layouts/main'
+                            'src/main/res/layouts/main',
+                            'src/main/res/layouts/testing'
             ]
         }
     }
