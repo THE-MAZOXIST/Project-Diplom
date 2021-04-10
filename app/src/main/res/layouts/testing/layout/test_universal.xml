@@ -4,29 +4,220 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mazaxist.quiz.MainActivity">
-
+    android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/main_backgroud"
+        android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@string/todo"
         android:scaleType="centerCrop"
-        android:src="@drawable/fon" />
+        android:src="@drawable/level1"
+        android:contentDescription="TODO" />
 
     <LinearLayout
+        android:id="@+id/container1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="145dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical">
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"/>
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/container2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <androidx.constraintlayout.motion.widget.MotionLayout
+                        android:id="@+id/relativeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layoutDescription="@xml/test_universal_xml_relativelayout_scene">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout43"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="60dp"
+                            android:background="#fff"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout42"
+                            app:layout_constraintVertical_bias="0.051"
+                            tools:layout_editor_absoluteX="0dp">
+
+                            <TextView
+                                android:id="@+id/textView173"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"
+                                android:background="#0948C5" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.01"
+                                android:background="#0948C5" />
+
+                            <TextView
+                                android:id="@+id/textView163"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#0948C5"
+                                android:gravity="center"
+                                android:padding="25dp"
+                                android:text="какие-то слова для теста с вопросом, на который надо дать ответ"
+                                android:textColor="#fff"
+                                tools:layout_constraintLeft_creator="1"
+                                tools:layout_constraintRight_creator="1"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="88dp"
+                            android:background="#fff"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            app:layout_constraintEnd_toEndOf="@+id/linearLayout42"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/linearLayout42"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/textView17"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"
+                                android:background="#0948C5" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.01"
+                                android:background="#0948C5" />
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#0948C5"
+                                android:gravity="center"
+                                android:padding="25dp"
+                                android:text="какие-то слова для теста с вопросом, на который надо дать ответ"
+                                android:textColor="#fff"
+                                tools:layout_constraintLeft_creator="1"
+                                tools:layout_constraintRight_creator="1"></TextView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout42"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:background="#fff"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            app:layout_constraintEnd_toEndOf="@+id/linearLayout43"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="@+id/linearLayout43"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+                            <TextView
+                                android:id="@+id/textView172"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.1"
+                                android:background="#0948C5" />
+
+                            <CheckBox
+                                android:id="@+id/checkBox3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.01"
+                                android:background="#0948C5" />
+
+                            <TextView
+                                android:id="@+id/textView162"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="#0948C5"
+                                android:gravity="center"
+                                android:padding="25dp"
+                                android:text="какие-то слова для теста с вопросом, на который надо дать ответ"
+                                android:textColor="#fff"
+                                tools:layout_constraintLeft_creator="1"
+                                tools:layout_constraintRight_creator="1"></TextView>
+                        </LinearLayout>
+
+
+                    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".0"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/button_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/button_stroke_white_press_blue"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="@string/back"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/btncontinuelevel1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/button_stroke_white_press_blue"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="@string/textcontinue"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
 
     </LinearLayout>
+
 
 </RelativeLayout>

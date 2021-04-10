@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Button lubsbut = (Button)findViewById(R.id.labs);
         lubsbut.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View v){EditText editText = (EditText) findViewById(R.id.password);
+            public void onClick(View v){
 
                 try{//переход к выбору уровня - начало
                     Intent intent = new Intent(MainActivity.this, Alabs_Levels.class);//создали намерения для перехода
@@ -55,6 +54,22 @@ public class MainActivity extends AppCompatActivity {
        });
 //кнопка "Лекции" - конец
 
+
+        //кнопка "test" - начало
+        Button testbut = (Button)findViewById(R.id.test);
+        testbut.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+
+                try{//переход к выбору уровня - начало
+                    Intent intent = new Intent(MainActivity.this, Test1.class);//создали намерения для перехода
+                    startActivity(intent);finish();//старт намерения
+                }catch (Exception e){
+
+                }//переход к выбору уровня - конец
+            }
+        });
+//кнопка "test" - конец
 
         Window w = getWindow();//расстягивает приложение на весь экран
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
